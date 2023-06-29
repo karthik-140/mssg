@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <h1>CSS-only Carousel</h1>
+
+<div class="para"><span></span></div>
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+        <img src="./assets/Forma 1.svg" />
+        <h3>THYROID</h3>
+        <p>
+          Thyroid disorders can be easily controlled by Homeopathic treatments
+          which are right to opt because it will have no side effects
+        </p>
+
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+      
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+        <img src="./assets/Forma 1 (1).svg" />
+          <h3>KIDNEY STONES</h3>
+          <p>
+            Hard deposits of salts and other minerals formed within the kidney
+            or urinary tract are termed as Kidney stones...
+          </p>
+
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+        <img src="./assets/L0001.png" />
+          <h3>ARTHRITS</h3>
+          <p>
+            Homeopathy treatment for arthritis uses natural remedies which are
+            safe, has no side effects, non toxic...
+          </p>
+          
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,710 @@
+/* Header */
+.phone span {
+  font-family: "Montserrat";
+}
+
+.email span {
+  font-family: "Roboto";
+}
+
+.social_info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0.5rem;
+  background-image: linear-gradient(270deg, #1c6ac6 0%, #00c7d8 100%);
+  color: white;
+  justify-content: end;
+  padding-right: 8rem;
+}
+
+.social_icons span {
+  font-family: "Montserrat";
+  font-size: medium;
+  padding-right: 0.5rem;
+}
+
+.social_icons i {
+  font-size: small;
+  background-color: #00bccc;
+  padding: 0.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* navbar */
+.hamburger {
+  position: relative;
+}
+
+.hamburger_checkbox {
+  width: 45px;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hamburger_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45px;
+  height: 35px;
+  padding: 0.5rem;
+  background-color: #00b6cf;
+  cursor: pointer;
+  border: 1px solid #00bccc;
+  position: relative;
+  z-index: 2;
+}
+
+.hamburger_menu span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle_links {
+  list-style: none;
+  position: absolute;
+  top: 130%;
+  right: 0;
+  padding: 1rem;
+  width: max-content;
+  background-color: #00cade;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hamburger_checkbox:checked ~ .toggle_links {
+  display: flex;
+}
+
+.toggle_links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.toggle_links li a:active,
+.toggle_links li a:hover {
+  color: #004590;
+}
+
+.toggle_links li {
+  border-bottom: 2px solid #ffff;
+}
+
+.navbar {
+  padding: 0rem 8rem;
+  display: flex;
+}
+
+.navbar img {
+  width: 250px;
+}
+
+.navbar i {
+  color: #00bccc;
+  cursor: pointer;
+}
+
+.navbar li a {
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  color: #1a2123;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-decoration: none;
+}
+
+.nav_links {
+  list-style-type: none;
+  gap: 3rem;
+  font-family: "Open Sans";
+  color: #1a2123;
+  font-weight: 400;
+  font-size: large;
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0rem 8rem;
+  gap: 3rem;
+  align-items: center;
+}
+
+.m_s-1_div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.m_s-1_div img {
+  box-shadow: 0 1px 18px 10px rgba(182, 180, 180, 0.25);
+  padding: 2rem;
+  align-self: center;
+}
+
+.welcome {
+  color: #00bccc;
+}
+
+.m_s-1 {
+  flex: 2;
+}
+
+.m_s-2 {
+  flex: 1;
+  background-image: linear-gradient(
+    90deg,
+    #00cade 0%,
+    #0fe7fc 50%,
+    #00cade 100%
+  );
+  border: 2px solid #ffd304;
+}
+.m_s-2 h3 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+}
+
+.form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.form input {
+  padding: 0.5rem;
+  background-color: rgba(10, 87, 169, 0.2);
+  border: 1px solid #3bedff;
+  outline: none;
+  color: white;
+}
+
+#message {
+  padding: 1.5rem 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.m_s-2 button {
+  background-color: #ffc90c;
+  border: 1px solid #ffc90c;
+  padding: 0.5rem;
+  color: #252525;
+  font-family: "Museo Sans Cyrl";
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+::placeholder {
+  color: white;
+}
+
+/* Treatments section */
+
+.treatments_section {
+  background-color: #fafafa;
+  padding: 1rem 8rem;
+  position: relative;
+}
+
+.carosel-button{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+/*
+.carosel-button::after,
+.carosel-button::before {
+  position: absolute;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #0058b6;
+  font-weight: 900;
+  font-size: 1.5rem;
+  pointer-events: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+} */
+
+/* .carosel-button::before {
+  content: "<";
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  transform: translate(-50%, -50%);
+  z-index: 5000;
+} */
+
+/* .carosel-button::after {
+  content: ">";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  right: -5%;
+  transform: translate(-50%, -50%);
+  z-index: 5000;
+}  */
+
+.treatments_section h1 {
+  color: #282828;
+  font-family: "Museo Sans Cyrl";
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.treatments_section ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 3rem;
+}
+
+.treatments_section li {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 1px 18px 10px rgba(182, 180, 180, 0.25);
+  flex: 1;
+}
+
+.treatments_section li img {
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid #00bccc;
+  color: #00bccc;
+}
+
+.treatments_section h3 {
+  color: #014d9f;
+  font-weight: 600;
+  font-family: "Muli";
+  font-size: 20px;
+  padding-top: 1rem;
+}
+
+.treatments_section p {
+  font-size: 15px;
+  color: #333333;
+  font-weight: 300;
+  font-family: "Muli";
+}
+
+/* chairman's about section */
+.about_section {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 8rem;
+  align-items: center;
+}
+
+.chairman_message {
+  border: 3px solid #00bccc;
+  padding: 2rem;
+  padding-bottom: 0rem;
+}
+
+.chairman_message h1 {
+  font-size: 32px;
+  color: #282828;
+  font-family: "Museo Sans Cyrl";
+}
+
+.chairman_message p {
+  font-size: 15px;
+  color: #333333;
+  font-weight: 300;
+  font-family: "Muli";
+  text-align: left;
+}
+
+.about_chairman {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_chairman h5 {
+  align-self: center;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  box-shadow: 0 1px 18px 10px rgba(100, 95, 95, 0.25);
+  color: #00b6cf;
+  font-weight: 400;
+  font-family: "Muli";
+  text-align: center;
+  font-size: 12px;
+}
+
+.about_chairman div {
+  border-top: 2px solid #00b6cf;
+  padding: 0.5em;
+}
+
+.about_chairman div h6 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 23px;
+  color: #0c55a4;
+  font-weight: 400;
+  font-family: "Muli";
+}
+
+.about_chairman div p {
+  font-size: 15px;
+  line-height: 23px;
+  color: #555656;
+  font-weight: 300;
+  font-family: "Muli";
+}
+
+.chairman_img img {
+  border-radius: 50%;
+  padding: 1rem;
+  border: 2px solid #ffff;
+}
+
+/* clients section */
+.client_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 8rem;
+  text-align: center;
+}
+
+.client_section h1 {
+  font-size: 32px;
+  line-height: 36px;
+  color: #282828;
+  font-family: "Museo Sans Cyrl";
+  text-align: center;
+}
+
+.brands {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brands li {
+  flex: 1;
+}
+
+.brands li img {
+  width: 250px;
+}
+
+.contact_info {
+  border-radius: 4px;
+  background-image: linear-gradient(
+    90deg,
+    #0559b5 0%,
+    #308aec 50%,
+    #0559b5 100%
+  );
+  border: 3px solid #0058b6;
+  padding: 1.5rem;
+}
+
+.contact_form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact_form input {
+  flex: 1;
+  background-color: rgba(0, 68, 140, 0.5019607843137255);
+  border: 1px solid #3bedff;
+  border-radius: 2px;
+  padding: 0.5rem;
+  outline: none;
+  color: white;
+}
+
+.contact_form button {
+  background-color: #00cede;
+  border: 1px solid #00cede;
+  border-radius: 2px;
+  flex: 1;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Muli";
+  text-align: center;
+}
+
+/* Celebrety section */
+
+.celeb_section {
+  padding: 2rem 8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.celeb_section h1 {
+  font-size: 32px;
+  line-height: 36px;
+  color: #282828;
+  font-family: "Museo Sans Cyrl";
+  text-align: center;
+}
+
+.celeb_section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.celeb_section li img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #00b6cf;
+}
+
+.celeb_section li p {
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  font-weight: 600;
+  font-family: "Muli";
+  text-align: center;
+}
+
+.celeb_section li {
+  flex: 1;
+}
+
+.disclaimer {
+  border: 2px solid #00b6cf;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  font-weight: 400;
+  font-family: "Muli";
+}
+
+.disclaimer p {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+/* footer */
+
+.footer_info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 2rem;
+  border-radius: 5px;
+  background-color: #004590;
+  color: white;
+  position: relative;
+  z-index: 100;
+}
+
+.footer_info h3 {
+  font-size: 22px;
+  line-height: 30px;
+  color: #83beff;
+  font-weight: 600;
+  font-family: "Muli";
+  position: relative;
+}
+
+.footer_info h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45px;
+  height: 2px;
+  border-bottom: 2px solid #ffcb05;
+}
+
+.footer_contact {
+  flex: 1.5;
+}
+.footer_address {
+  flex: 1.5;
+}
+.footer_branch {
+  flex: 1;
+}
+.footer_links {
+  flex: 2;
+}
+
+.footer_links ul,
+.footer_branch ul {
+  list-style: none;
+  margin-right: auto;
+}
+
+.footer_links ul li::before,
+.footer_branch ul li::before {
+  content: "\2022";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  font-weight: bold;
+  margin-left: -2rem;
+  color: #1466be;
+}
+
+.footer {
+  background-color: #00b6cf;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.footer p {
+  align-self: end;
+}
+
+.footer_section {
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 0rem 2rem;
+  }
+
+  .about_section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 2rem;
+    align-items: center;
+  }
+
+  .chairman_message {
+    order: 2;
+  }
+
+  .chairman_img {
+    order: 1;
+  }
+
+  .client_section {
+    padding: 2rem;
+  }
+
+  .celeb_section {
+    padding: 2rem;
+  }
+
+  .navbar {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 0rem 1rem;
+  }
+  .m_s-1_div img {
+    box-shadow: 0 1px 18px 10px rgba(182, 180, 180, 0.25);
+    padding: 0rem 0rem;
+  }
+
+  .treatments_section {
+    padding: 1rem 1rem;
+  }
+
+  .client_section {
+    padding: 1rem;
+  }
+
+  .celeb_section {
+    padding: 1rem;
+  }
+
+  .footer {
+    height: 60%;
+  }
+
+  .navbar img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .brands li img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .nav_links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .hamburger_menu,
+  .toggle_links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .social_info {
+    display: none;
+  }
+}
